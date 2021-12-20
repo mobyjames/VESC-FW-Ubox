@@ -216,6 +216,11 @@ static THD_FUNCTION(adc_thread, arg) {
 
 		decoded_level2 = brake;
 
+		// Any significant braking cancels all throttle
+		if (decoded_level2 > 0.03) {
+			decoded_level = 0.0;
+		}
+
 		// Read the button pins
 		bool cc_button = false;
 		bool rev_button = false;
