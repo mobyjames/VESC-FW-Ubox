@@ -1,4 +1,9 @@
-# VESC firmware
+# VESC firmware - Customized for Ubox V1
+
+This is my version forked from Spintend's version with the following tweaks for go karts:
+
+* Any ADC brake input cancels all throttle input
+* Allows ADC_CTRL_TYPE_CURRENT_REV_BUTTON_BRAKE_ADC mode to use servo input as reverse instead of cruise control
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Travis CI Status](https://travis-ci.com/vedderb/bldc.svg?branch=master)](https://travis-ci.com/vedderb/bldc)
